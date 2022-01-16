@@ -1,0 +1,32 @@
+0	per:alternate_name
+1	per:children
+2	per:parents
+3	per:acquaintance
+4	per:client
+5	per:colleague
+6	per:ex-girlfriend
+7	per:girlfriend
+8	per:dates
+9	per:ex-boyfriend
+10	per:boyfriend
+11	per:friends
+12	per:nickname
+13	per:neighbor
+14	per:nurse
+15	per:parents-in-law
+16	per:children-in-law
+17	per:positive impression
+18	per:classmate
+19	per:negative impression
+20	per:subordinate
+21	per:boss
+22	per:siblings
+23	per:spouse
+24	per:grandparents
+25	per:grandchildren
+26	per:teacher
+27	per:student
+28	per:roommate
+29	per:relative
+30	per:siblings-in-law
+31	unanswerable
