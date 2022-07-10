@@ -3,19 +3,20 @@ The CRECIL Corpus: a New Dataset for Extraction of Relations between Characters 
 
 本项目提出并描述了一个新的可自由使用的中文多方对话数据集，用于自动提取基于对话的角色关系。这些数据是从中国情景喜剧《我爱我家》(I Love My Home)的原始电视剧本中提取出来的，该电视剧以复杂的家庭为基础，用中文进行自然的对话。我们引入了基于全局角色关系图和对话角色指代关系的人工标注方法，生成了对话角色关系三元组。我们发现，在实际的汉语会话中提取人物关系比在英语会话中更具挑战性。
 
-本项目的目录结构分为**Orginal_data**，**My_home_data**，**Final_data**，**bert**四个文件夹，具体介绍如下：
+本项目的目录结构分为[Orginal_data](#a1)，[My_home_data](#a2)，[Final_data](#a3)，[bert](#a4)四个文件夹，具体介绍如下：
 
 ```
 ├─ Final_data/: train/dev/test data
 ├─ My_home_data/: generate CRTs in dialogue and CRTs data
 ├─ Orginal_data/: preprocessed data conclude Gc & Gr
 ├─ bert/: source model codes
-├─ LICENSE
+├─ some pictures
 ├─ README.md
 ```
 
 
-#### **⭐️Orginal_data**
+
+#### **⭐️<span id = "a1">Orginal_data</span>**
 
 Orginal_data的目录结构如下，存储了本项目所标注的指代数据和关系数据，共标注了121个角色实体，30种角色与角色之间关系，以及8282条全局指代关系。
 
@@ -81,7 +82,7 @@ Orginal_data的目录结构如下，存储了本项目所标注的指代数据�
 
 
 
-#### **⭐️My_home_data**
+#### **⭐️<span id = "a2">My_home_data</span>**
 
 该文件夹下保存了本项目生成CRT三元组的过程以及将源文件经过的格式处理化后的数据信息。
 
@@ -136,7 +137,7 @@ final.json为最终格式化处理后的数据，数据格式如下所示。
 
 
 
-#### **⭐️Final_Data**
+#### **⭐️<span id = "a3">Final_Data</span>**
 
 Final_data文件夹下保存了本项目划分数据集的代码以及划分数据集的结果。
 
@@ -152,7 +153,7 @@ Final_data文件夹下保存了本项目划分数据集的代码以及划分数�
 
 <img src="./example.png" style="zoom:70%;" />
 
-#### **⭐️bert**
+#### **⭐️<span id = "a4">bert</span>**
 
 该文件夹下保存了本文所使用的对话关系抽取模型的相关代码，参考DialogRE数据集提供的基线模型。模型结构图如下图所示。
 
