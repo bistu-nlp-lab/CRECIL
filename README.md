@@ -31,35 +31,32 @@ Orginal_data的目录结构如下，存储了本项目所标注的指代数据�
 
 其中**My_home.json** 文件中包含了本文所标注的全局指代信息，Json文件的格式如下所示，其中character_entities存储了本文关键的指代信息**（Relation Reference Tripe，RRT）**, ```corefer∈Gc，RRT=(A′, A, P)```, A′代表在话语中的角色指代词，A代表真实的角色名称，P代表在当前话语中指代词出现的位置用于定位，例：第一句中（爸，贾志国，0）。
 
-<img src="Figure2.png"/>
+<img src="Figure2.png" />
 
 ```json
 {
     "episodes": [
         {
-            "episode_id": Episode_id,
+            "episode_id": "Episode_id",
             "scenes": [
                 {
-                    "scene_id": Scene_id,
+                    "scene_id": "Scene_id",
                     "utterances": [
                  		{
-                            "utterance_id":        Utterance_id,
-                            "speakers":            Speaker_name,
-                            "transcript":          Utterance_text,
-                            "tokens":              Utterance_token,
-                            "character_entities":  Global confers
+                            "utterance_id":        "Utterance_id",
+                            "speakers":            "Speaker_name",
+                            "transcript":          "Utterance_text",
+                            "tokens":              "Utterance_token",
+                            "character_entities":  "Global confers"
                         },
-                        ... ...
-                        (other utterances)
+                        "...(other utterances)"
                     ]
                 }
             ]
-            ... ...
-            (other scenes)
+            "... (other scenes)"
         }
     ]
-    ... ...
-    (other episodes)
+    "...(other episodes)"
 }
 ```
 
@@ -96,11 +93,11 @@ Orginal_data的目录结构如下，存储了本项目所标注的指代数据�
 
 其中exportCRT.py为本文生成角色关系三元组（CRT）的策略，伪代码如下所示。
 
-<img src="./pic/DGRT.png" alt="image-20220422063054481" style="zoom:80%;" />
+<img src="./DGRT.png" alt="DGRT.png" style="zoom:80%;" />
 
 生成角色关系三元组之后，将对话和角色关系三元组拼接，共同构建成完整的数据。数据处理流程图如下图所示。
 
-<img src="./pic/new_GRT.png" style="zoom: 20%;" />
+<img src="./new_GRT.png" style="zoom: 20%;" />
 
 final.json为最终格式化处理后的数据，数据格式如下所示。
 
@@ -153,13 +150,13 @@ Final_data文件夹下保存了本项目划分数据集的代码以及划分数�
 
 该其中shuffle_data.py为划分数据集的策略，数据按照7:2:1划分，train.json, dev.json以及test.json为本文所使用的实验数据。
 
-<img src="./pic/example.png" style="zoom:70%;" />
+<img src="./example.png" style="zoom:70%;" />
 
 #### **⭐️bert**
 
 该文件夹下保存了本文所使用的对话关系抽取模型的相关代码，参考DialogRE数据集提供的基线模型。模型结构图如下图所示。
 
-<img src="./pic/model.png" style="zoom: 60%;" />
+<img src="./model.png" style="zoom: 60%;" />
 
 实验环境：
 
